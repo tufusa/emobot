@@ -1,11 +1,11 @@
-import { Hono } from "hono";
-import { verifyKeyMiddleware } from "./middleware/verifyKeyMiddleware";
 import {
   APIInteraction,
   APIInteractionResponsePong,
   InteractionResponseType,
   InteractionType,
 } from "discord-api-types/v10";
+import { Hono } from "hono";
+import { verifyKeyMiddleware } from "./middleware/verifyKeyMiddleware";
 
 export type Bindings = {
   BOT_TOKEN: string;

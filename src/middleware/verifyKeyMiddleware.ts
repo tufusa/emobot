@@ -1,6 +1,6 @@
 import { verifyKey } from "discord-interactions";
-import { Bindings } from "..";
 import { createMiddleware } from "hono/factory";
+import { Bindings } from "..";
 
 export const verifyKeyMiddleware = createMiddleware<{ Bindings: Bindings }>(
   async (c, next) => {
