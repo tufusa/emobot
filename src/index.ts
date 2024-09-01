@@ -11,6 +11,7 @@ export type Bindings = {
   BOT_TOKEN: string;
   BOT_PUBLIC_KEY: string;
   BOT_APPLICATION_ID: string;
+  BOT_EMOJI_URL: string;
 };
 
 const app = new Hono();
