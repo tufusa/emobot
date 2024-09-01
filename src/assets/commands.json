@@ -1,0 +1,13 @@
+{
+  "name": "emo",
+  "type": 1,
+  "description": "Send a emoji",
+  "options": [
+    {
+      "name": "name",
+      "description": "The name of emoji",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
