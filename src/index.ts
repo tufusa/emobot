@@ -1,7 +1,7 @@
 import {
-  APIInteraction,
-  APIInteractionResponseChannelMessageWithSource,
-  APIInteractionResponsePong,
+  type APIInteraction,
+  type APIInteractionResponseChannelMessageWithSource,
+  type APIInteractionResponsePong,
   ApplicationCommandOptionType,
   ApplicationCommandType,
   InteractionResponseType,
@@ -9,7 +9,7 @@ import {
   MessageFlags,
 } from "discord-api-types/v10";
 import { Hono } from "hono";
-import { StatusCode } from "hono/utils/http-status";
+import type { StatusCode } from "hono/utils/http-status";
 import commands from "./assets/commands.json";
 import { verifyKeyMiddleware } from "./middleware/verifyKeyMiddleware";
 
@@ -31,18 +31,21 @@ app.get("/", (c) => {
 app.post("/interactions", async (c) => {
   const interaction = await c.req.json<APIInteraction>();
 
-  if (interaction.type == InteractionType.Ping) {
+  if (interaction.type === InteractionType.Ping) {
     return c.json<APIInteractionResponsePong>({
       type: InteractionResponseType.Pong,
     });
-  } else if (
-    interaction.type == InteractionType.ApplicationCommand &&
-    interaction.data.type == ApplicationCommandType.ChatInput &&
-    interaction.data.name == commands.name &&
-    interaction.data.options?.[0].type == ApplicationCommandOptionType.String &&
-    interaction.data.options?.[0].name == commands.options[0].name
+  }
+
+  const { type, data } = interaction;
+  if (
+    type === InteractionType.ApplicationCommand &&
+    data.type === ApplicationCommandType.ChatInput &&
+    data.name === commands.name &&
+    data.options?.[0].type === ApplicationCommandOptionType.String &&
+    data.options?.[0].name === commands.options[0].name
   ) {
-    const emojiName = interaction.data.options[0].value;
+    const emojiName = data.options[0].value;
     const response = await fetch(`${c.env.BOT_EMOJI_URL}?name=${emojiName}`);
     const json = (await response.json()) as { url?: string };
     if (!response.ok || !json.url) {
@@ -75,12 +78,12 @@ app.post("/register/:guildId", async (c) => {
         "Content-Type": "application/json",
         Authorization: `Bot ${c.env.BOT_TOKEN}`,
       },
-    }
+    },
   );
 
   return c.json(
     { response: await response.json() },
-    response.status as StatusCode
+    response.status as StatusCode,
   );
 });
 

@@ -3,7 +3,10 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "format": "biome format --write src",
+    "lint": "biome lint --write src",
+    "check": "biome check --write src"
   },
   "dependencies": {
     "discord-api-types": "^0.37.98",
@@ -11,9 +14,8 @@
     "hono": "^4.5.10"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@cloudflare/workers-types": "^4.20240529.0",
-    "prettier": "^3.3.3",
-    "prettier-plugin-organize-imports": "^4.0.0",
     "wrangler": "^3.57.2"
   },
   "packageManager": "pnpm@9.9.0"
