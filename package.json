@@ -9,14 +9,14 @@
     "check": "biome check --write src"
   },
   "dependencies": {
-    "discord-api-types": "^0.37.98",
+    "discord-api-types": "^0.37.99",
     "discord-interactions": "^4.1.0",
     "hono": "^4.5.10"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@cloudflare/workers-types": "^4.20240529.0",
-    "wrangler": "^3.57.2"
+    "@cloudflare/workers-types": "^4.20240821.1",
+    "wrangler": "^3.73.0"
   },
   "packageManager": "pnpm@9.9.0"
 }
