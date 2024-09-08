@@ -6,7 +6,8 @@
     "deploy": "wrangler deploy --minify src/index.ts",
     "format": "biome format --write src",
     "lint": "biome lint --write src",
-    "check": "biome check --write src"
+    "check": "biome check --write src",
+    "ci:check": "biome check src"
   },
   "dependencies": {
     "discord-api-types": "^0.37.99",
