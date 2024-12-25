@@ -10,7 +10,7 @@ importers:
     dependencies:
       discord-api-types:
         specifier: ^0.37.99
-        version: 0.37.112
+        version: 0.37.113
       discord-interactions:
         specifier: ^4.1.0
         version: 4.1.0
@@ -330,8 +330,8 @@ packages:
   defu@6.1.4:
     resolution: {integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg==}
 
-  discord-api-types@0.37.112:
-    resolution: {integrity: sha512-DDEt3696k7o9+Ot2a5phqsEKnwhSGfIDzXJR9V5OMba9fbvJOEhPapLXy645RkrGCEKZeoFd3qXFhrvVQSUbxQ==}
+  discord-api-types@0.37.113:
+    resolution: {integrity: sha512-AqBy2OZoYjkIycBGwFFJwqDWiNp8xMSYpIDVH3y4cQ15LyQLKF1n/bdDxK0uY0/a6snr7KJDKOXvtMRKZtqm8w==}
 
   discord-interactions@4.1.0:
     resolution: {integrity: sha512-7DyXvsnp9FxjMPD+cPHG3DbttveVgOcWOBtWqyjSQ2bsfkTVpJF2l4c8+XujXaC45NXpRV67Da3go5O2DI0/hw==}
@@ -712,7 +712,7 @@ snapshots:
 
   defu@6.1.4: {}
 
-  discord-api-types@0.37.112: {}
+  discord-api-types@0.37.113: {}
 
   discord-interactions@4.1.0: {}
 
