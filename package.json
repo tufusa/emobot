@@ -6,8 +6,9 @@
     "deploy": "wrangler deploy --minify src/index.ts",
     "format": "biome format --write src",
     "lint": "biome lint --write src",
-    "check": "biome check --write src",
-    "ci:check": "biome check src",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm typecheck && biome check --write src",
+    "ci:check": "pnpm typecheck && biome check src",
     "ci:build": "wrangler deploy --dry-run --minify src/index.ts"
   },
   "dependencies": {
