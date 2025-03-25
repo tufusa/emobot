@@ -9,7 +9,7 @@ import {
   MessageFlags,
 } from "discord-api-types/v10";
 import { Hono } from "hono";
-import type { StatusCode } from "hono/utils/http-status";
+import type { ContentfulStatusCode } from "hono/utils/http-status";
 import commands from "./assets/commands.json";
 import { verifyKeyMiddleware } from "./middleware/verifyKeyMiddleware";
 
@@ -83,7 +83,7 @@ app.post("/register/:guildId", async (c) => {
 
   return c.json(
     { response: await response.json() },
-    response.status as StatusCode,
+    response.status as ContentfulStatusCode,
   );
 });
 
