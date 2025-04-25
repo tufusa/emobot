@@ -12,7 +12,7 @@
     "ci:build": "wrangler deploy --dry-run --minify src/index.ts"
   },
   "dependencies": {
-    "discord-api-types": "^0.37.99",
+    "discord-api-types": "^0.38.0",
     "discord-interactions": "^4.1.0",
     "hono": "^4.5.10"
   },
