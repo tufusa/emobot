@@ -10,7 +10,7 @@ importers:
     dependencies:
       discord-api-types:
         specifier: ^0.38.0
-        version: 0.38.9
+        version: 0.38.10
       discord-interactions:
         specifier: ^4.1.0
         version: 4.3.0
@@ -23,13 +23,13 @@ importers:
         version: 1.9.4
       '@cloudflare/workers-types':
         specifier: ^4.20240821.1
-        version: 4.20250529.0
+        version: 4.20250531.0
       typescript:
         specifier: ^5.8.2
         version: 5.8.3
       wrangler:
         specifier: ^4.0.0
-        version: 4.18.0(@cloudflare/workers-types@4.20250529.0)
+        version: 4.18.0(@cloudflare/workers-types@4.20250531.0)
 
 packages:
 
@@ -129,8 +129,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20250529.0':
-    resolution: {integrity: sha512-l6tVFpI6MUChMD0wK+Jhikb+aCbrmIR58CVpV/BhRT4THjl+nFhTT5N5ZqX42FDXdE3hCPLjueBMpPRhPUOB2A==}
+  '@cloudflare/workers-types@4.20250531.0':
+    resolution: {integrity: sha512-iVcWk78z1qNnEWMOUkXvfURz407m/l/xjRKyFW3XM39t7xGgF8GjARMJs/pT93tLPGvrZ7qlj9j92eIhdsexfg==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
     engines: {node: '>=8'}
 
-  discord-api-types@0.38.9:
-    resolution: {integrity: sha512-LaVbou3fYrRbploSUNAWnyXBmUmVfH4FrQ8W2AVA7f/hUSPcUtkc1bDjELt2wrbIDBbSI4uMo/d/HxeIz7JvoQ==}
+  discord-api-types@0.38.10:
+    resolution: {integrity: sha512-6F02RttmlDoTpFEeOlF1Z9lmNDUFum4ewBPFFjkD6mIlnd+NJ6oze/dllPdp8dpNvFuLHyEfVy+UPZ1s+IWmmA==}
 
   discord-interactions@4.3.0:
     resolution: {integrity: sha512-qCJEnuQeIDIo26MPEqYlIiYokqwFAMoRsmEE0PgAuiTYNXIMB9Z40LmqlgYe0yBO+743+AOnfTQdUK1WLg8+pw==}
@@ -650,7 +650,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20250525.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20250529.0': {}
+  '@cloudflare/workers-types@4.20250531.0': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -856,7 +856,7 @@ snapshots:
 
   detect-libc@2.0.4: {}
 
-  discord-api-types@0.38.9: {}
+  discord-api-types@0.38.10: {}
 
   discord-interactions@4.3.0: {}
 
@@ -1004,7 +1004,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250525.0
       '@cloudflare/workerd-windows-64': 1.20250525.0
 
-  wrangler@4.18.0(@cloudflare/workers-types@4.20250529.0):
+  wrangler@4.18.0(@cloudflare/workers-types@4.20250531.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@cloudflare/unenv-preset': 2.3.2(unenv@2.0.0-rc.17)(workerd@1.20250525.0)
@@ -1015,7 +1015,7 @@ snapshots:
       unenv: 2.0.0-rc.17
       workerd: 1.20250525.0
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20250529.0
+      '@cloudflare/workers-types': 4.20250531.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
