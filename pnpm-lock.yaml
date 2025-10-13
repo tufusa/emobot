@@ -13,7 +13,7 @@ importers:
         version: 0.38.29
       discord-interactions:
         specifier: ^4.1.0
-        version: 4.3.0
+        version: 4.4.0
       hono:
         specifier: ^4.5.10
         version: 4.9.10
@@ -460,8 +460,8 @@ packages:
   discord-api-types@0.38.29:
     resolution: {integrity: sha512-+5BfrjLJN1hrrcK0MxDQli6NSv5lQH7Y3/qaOfk9+k7itex8RkA/UcevVMMLe8B4IKIawr4ITBTb2fBB2vDORg==}
 
-  discord-interactions@4.3.0:
-    resolution: {integrity: sha512-qCJEnuQeIDIo26MPEqYlIiYokqwFAMoRsmEE0PgAuiTYNXIMB9Z40LmqlgYe0yBO+743+AOnfTQdUK1WLg8+pw==}
+  discord-interactions@4.4.0:
+    resolution: {integrity: sha512-jjJx8iwAeJcj8oEauV43fue9lNqkf38fy60aSs2+G8D1nJmDxUIrk08o3h0F3wgwuBWWJUZO+X/VgfXsxpCiJA==}
     engines: {node: '>=18.4.0'}
 
   error-stack-parser-es@1.0.5:
@@ -869,7 +869,7 @@ snapshots:
 
   discord-api-types@0.38.29: {}
 
-  discord-interactions@4.3.0: {}
+  discord-interactions@4.4.0: {}
 
   error-stack-parser-es@1.0.5: {}
 
