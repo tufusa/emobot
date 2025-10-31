@@ -17,7 +17,7 @@
     "hono": "^4.5.10"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.1",
+    "@biomejs/biome": "2.3.2",
     "@cloudflare/workers-types": "^4.20240821.1",
     "typescript": "^5.8.2",
     "wrangler": "^4.0.0"
