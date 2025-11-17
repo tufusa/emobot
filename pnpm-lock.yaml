@@ -16,7 +16,7 @@ importers:
         version: 4.4.0
       hono:
         specifier: ^4.5.10
-        version: 4.10.5
+        version: 4.10.6
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.5
@@ -481,8 +481,8 @@ packages:
   glob-to-regexp@0.4.1:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
 
-  hono@4.10.5:
-    resolution: {integrity: sha512-h/MXuTkoAK8NG1EfDp0jI1YLf6yGdDnfkebRO2pwEh5+hE3RAJFXkCsnD0vamSiARK4ZrB6MY+o3E/hCnOyHrQ==}
+  hono@4.10.6:
+    resolution: {integrity: sha512-BIdolzGpDO9MQ4nu3AUuDwHZZ+KViNm+EZ75Ae55eMXMqLVhDFqEMXxtUe9Qh8hjL+pIna/frs2j6Y2yD5Ua/g==}
     engines: {node: '>=16.9.0'}
 
   is-arrayish@0.3.4:
@@ -894,7 +894,7 @@ snapshots:
 
   glob-to-regexp@0.4.1: {}
 
-  hono@4.10.5: {}
+  hono@4.10.6: {}
 
   is-arrayish@0.3.4: {}
 
