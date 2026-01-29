@@ -16,7 +16,7 @@ importers:
         version: 4.4.0
       hono:
         specifier: ^4.5.10
-        version: 4.11.5
+        version: 4.11.6
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.13
@@ -489,8 +489,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  hono@4.11.5:
-    resolution: {integrity: sha512-WemPi9/WfyMwZs+ZUXdiwcCh9Y+m7L+8vki9MzDw3jJ+W9Lc+12HGsd368Qc1vZi1xwW8BWMMsnK5efYKPdt4g==}
+  hono@4.11.6:
+    resolution: {integrity: sha512-ofIiiHyl34SV6AuhE3YT2mhO5HRWokce+eUYE82TsP6z0/H3JeJcjVWEMSIAiw2QkjDOEpES/lYsg8eEbsLtdw==}
     engines: {node: '>=16.9.0'}
 
   kleur@4.1.5:
@@ -886,7 +886,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  hono@4.11.5: {}
+  hono@4.11.6: {}
 
   kleur@4.1.5: {}
 
