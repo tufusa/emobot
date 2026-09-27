@@ -29,7 +29,7 @@ importers:
         version: 7.0.2
       wrangler:
         specifier: ^4.0.0
-        version: 4.137.0(@cloudflare/workers-types@4.20260702.1)
+        version: 4.138.0(@cloudflare/workers-types@4.20260702.1)
 
 packages:
 
@@ -646,8 +646,8 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  miniflare@5.20260921.0-alpha:
-    resolution: {integrity: sha512-vHH/unOYvV2jA1Q9SdkmzrQhhMoksdwg5jegu6ZeKaaRzgxZhVbt1NdTpQjHF2VTgiBjgP8SiUlUMfruB3N3SQ==}
+  miniflare@5.20260921.1-alpha:
+    resolution: {integrity: sha512-nvw7bDhUCMTKbpZWJ/WHQFn1FDopseuMQQGxkO3/f0r9eXeizux0ZxV3sZnEHnS0lDWb3Je0bIO2MJcFK4O8GQ==}
     engines: {node: '>=22.0.0'}
 
   path-to-regexp@6.3.0:
@@ -694,8 +694,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.137.0:
-    resolution: {integrity: sha512-vq2JmxkvwOjnsMUejQwd89/EK6u1d20OMlGUVVmb55gVi2zSBKp2rvmxUiPqrSEntK8NwzpTF3DQ/S2I9/TLsg==}
+  wrangler@4.138.0:
+    resolution: {integrity: sha512-jxNlOfssgyMo+eUcWBX+BxAuU6/AZAn8mNimicLv4igxbRH40OFRBMtGJT8z4kJwXPJriy1O4TB7A8lYjKb82w==}
     engines: {node: '>=22.0.0'}
     hasBin: true
     peerDependencies:
@@ -1110,7 +1110,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  miniflare@5.20260921.0-alpha:
+  miniflare@5.20260921.1-alpha:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       sharp: 0.35.4
@@ -1203,13 +1203,13 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20260921.1
       '@cloudflare/workerd-windows-64': 1.20260921.1
 
-  wrangler@4.137.0(@cloudflare/workers-types@4.20260702.1):
+  wrangler@4.138.0(@cloudflare/workers-types@4.20260702.1):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.5.0
       '@cloudflare/unenv-preset': 2.16.2(unenv@2.0.0-rc.24)(workerd@1.20260921.1)
       blake3-wasm: 2.1.5
       esbuild: 0.28.1
-      miniflare: 5.20260921.0-alpha
+      miniflare: 5.20260921.1-alpha
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.24
       workerd: 1.20260921.1
